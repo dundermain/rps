@@ -1,0 +1,17 @@
+# config.yaml
+
+train_params:
+  batch_size: 32
+  learning_rate: 0.001
+  num_epochs: 10
+  num_workers: 4
+  k_folds: 5    # Number of folds for cross-validation
+
+data_params:
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+
+model_params:
+  pretrained: True
+  model_save_path: "../models/model.pth"
